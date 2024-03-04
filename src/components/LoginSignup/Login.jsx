@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from "react";
 import './Login.css'
+import './Signup'
 import {Link} from "react-router-dom";
-
 import email_icon from '../Assets/email.png'
 import password_icon from '../Assets/password.png'
 
@@ -29,7 +29,7 @@ export const Login = () => {
             <input type='password' placeholder='Password' />
             </div>
         </div>
-        <div className="forgot-password">Not Registered? <Link to='/Signup'>Click Here!</Link></div>
+        <div className="forgot-password">Not Registered? <Link to='/signup'>Click Here!</Link></div>
         <div className="submit-container">
        <div className={action==="Sign Up"?"submit gray":"submit"}onClick={()=>{setAction("Login")}}>Log In</div>
         </div>
